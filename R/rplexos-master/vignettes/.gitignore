@@ -1,0 +1,5 @@
+*.html
+*.md
+*.R
+*.build.timestamp
+figure

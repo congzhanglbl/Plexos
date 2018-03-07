@@ -1,0 +1,16 @@
+develop.r
+*.xml
+*.db
+src/*.o
+src/*.so
+src/*.dll
+src-*
+inst/doc
+inst/web
+.Rproj.user
+*.Rproj
+.Rhistory
+.Rprofile
+.Rapp.history
+packrat/lib*/
+packrat/src*/
