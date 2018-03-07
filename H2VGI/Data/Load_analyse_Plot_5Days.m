@@ -1,10 +1,10 @@
 clear 
 close all
-clc
+
 x=[1:60]'; % 5 days
 
 %[num,txt, raw] = xlsread('5Days.xlsx',1);
-[num,txt, raw] = xlsread('5Days-Block.xlsx',1);
+[num,txt, raw] = xlsread('5Days.xlsx',1);
 
 % Plot 
 figure(1)
@@ -34,5 +34,5 @@ legend('BAU','Block','Flexible')
 fprintf('For cost, the BAU = %.2f $, the Block =  %.2f $, the Flexible =  %.2f $ \n', sum(num(:,1))*2,sum(num(:,2))*2,sum(num(:,3))*2)
 Total_Cost_BAU = sum(num(:,1))*2;
 Total_Cost_Block = sum(num(:,2))*2;
-Total_Cost_Flexible = sum(num(:,2))*2;
+Total_Cost_Flexible = sum(num(:,3))*2;
 fprintf('For cost per unit, the BAU = %.2f $/MWh, the Block =  %.2f $/MWh , the Flexible =  %.2f $/MWh\n',Total_Cost_BAU/Total_load_BAU/1000,Total_Cost_Block/Total_load_Block/1000,Total_Cost_Flexible/Total_load_Flexible/1000)

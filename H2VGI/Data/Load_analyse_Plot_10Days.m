@@ -1,6 +1,6 @@
 clear 
 close all
-clc
+
 x=[1:120]'; % 10 days
 
 [num,txt, raw] = xlsread('10Days.xlsx',1);
